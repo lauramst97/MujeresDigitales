@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenido-body{
+    background: #72e6d2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-calculadora{
+    width: 400px;
+    height: 450px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 1px 29px 6px rgba(0,0,0,0.3);
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px;
+    grid-gap: 20px;
+}
+.screen{
+    background-color: rgb(214, 208, 208);
+    border-radius: 10px;
+    color: black;
+    padding: 15px;
+    grid-column: 1/5;
+
+}
+.screen > input{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font-size: 50px;
+    width: 100%;
+}
+.btn-cal{
+    background-color: white;
+}
+.btn-cal-radius{
+    border-radius: 10px;
+}
+.btn-cal > input{
+    border:0;
+    height: 100%;
+    width: 100%;
+    border-radius:10px;
+    outline: none;
+    color: black;
+    font-size: 35px;
+}
+.btn-cal > .igual{
+    background-color: #32e92b;
+}
+.btn-cal > .limpiar{
+    background-color: rgb(245, 234, 80);
+}
+.btn-cal :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(114, 225, 240);
+    color: white;
+}
+.btn-limpiar :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(226, 230, 17);
+    color: white;
+}
+.btn-igual :hover{
+    transition-duration: 0.4s;
+    background-color: rgb(76, 214, 76);
+    color: white;
+}
